@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Gina Carvalho | Terapia de casal e psicoterapia online
+  </title>
+
+  <meta
+    name="description"
+    content="Terapia de casal e psicoterapia individual online para adultos com Gina Carvalho. Cuidado com emoções, comunicação e relacionamentos. Conheça o atendimento."
+  >
+
+  <meta
+    name="theme-color"
+    content="#435449"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:title"
+    content="Gina Carvalho | Psicóloga online"
+  >
+
+  <meta
+    property="og:description"
+    content="Um espaço para cuidar de você e das suas relações. Terapia de casal e psicoterapia individual online para adultos."
+  >
+
+  <!--
+    Após publicar, acrescente canonical e og:url
+    com o endereço público real do site.
+
+    Uma foto real pode ser adicionada como arquivo local.
+
+    Preencha os dados profissionais no objeto CONFIG,
+    ao final deste arquivo.
+  -->
+
+  <style>
+    :root {
+      --paper: #faf7f1;
+      --ink: #302d28;
+      --green: #435449;
+      --muted: #645f56;
+      --line: #d9d3c7;
+      --cream: #eee8dc;
+      --gold: #9a784b;
+      --white: #ffffff;
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--green);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 5px;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .skip {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      z-index: 5;
+      padding: 12px;
+      background: var(--white);
+    }
+
+    .skip:focus {
+      top: 8px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      text-decoration: none;
+    }
+
+    .brand small {
+      display: block;
+      font-family: system-ui, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      line-height: 1.16;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 16px 0 24px;
+      font-size: clamp(38px, 5.2vw, 66px);
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: clamp(31px, 3.5vw, 44px);
+    }
+
+    h3 {
+      margin: 0 0 18px;
+      font-size: 27px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      padding: 88px 0 76px;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 21px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 23px;
+      border: 1px solid var(--green);
+      border-radius: 99px;
+      background: var(--green);
+      color: var(--white);
+      font-family: system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #314238;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--green);
+    }
+
+    .button.secondary:hover {
+      background: var(--cream);
+    }
+
+    .button:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .identity,
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .tint {
+      background: var(--cream);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+
+    .card {
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+    }
+
+    .reading {
+      max-width: 800px;
+    }
+
+    .reading p {
+      max-width: 74ch;
+    }
+
+    ul,
+    ol {
+      padding-left: 23px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .quote {
+      margin: 28px 0;
+      color: var(--green);
+      font-family: Georgia, serif;
+      font-size: clamp(29px, 4vw, 48px);
+      line-height: 1.3;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .notice {
+      margin: 24px 0;
+      padding: 12px 20px;
+      border-left: 3px solid var(--gold);
+      background: var(--cream);
+    }
+
+    .steps {
+      padding: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+
+    .steps li {
+      display: flex;
+      gap: 16px;
+      margin: 20px 0;
+      counter-increment: step;
+    }
+
+    .steps li::before {
+      content: counter(step, decimal-leading-zero);
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 24px;
+    }
+
+    details {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    summary {
+      padding-right: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    details p {
+      margin: 16px 0 0;
+    }
+
+    footer {
+      padding: 40px 0;
+      background: var(--green);
+      color: var(--paper);
+    }
+
+    footer a {
+      color: inherit;
+    }
+
+    footer .identity,
+    footer .small {
+      color: inherit;
+    }
+
+    #setup {
+      padding: 12px 20px;
+      border-bottom: 1px solid #cbb784;
+      background: #f3e5ca;
+      color: #493b22;
+      font-size: 14px;
+    }
+
+    #setup[hidden] {
+      display: none;
+    }
+
+    .contact {
+      overflow-wrap: anywhere;
+    }
+
+    noscript p {
+      padding: 18px;
+      background: var(--cream);
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      header {
+        position: static;
+      }
+
+      nav {
+        gap: 10px 16px;
+      }
+
+      .hero {
+        padding: 48px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .card {
+        padding: 25px;
+      }
+
+      .wrap {
+        width: calc(100% - 32px);
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .lead {
+        font-size: 19px;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">
+    Pular para o conteúdo
+  </a>
+
+  <div id="setup" role="status">
+    Modelo para revisão: preencha nome de registro, CRP,
+    WhatsApp, e-mail e horário de resposta no código
+    antes de publicar.
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a
+        class="brand"
+        href="#inicio"
+        aria-label="Gina Carvalho, início"
+      >
+        Gina Carvalho
+
+        <small>
+          Psicóloga • Relacionamentos
+        </small>
+      </a>
+
+      <nav aria-label="Menu principal">
+        <a href="#casal">
+          Terapia de casal
+        </a>
+
+        <a href="#individual">
+          Terapia individual
+        </a>
+
+        <a href="#sobre">
+          Sobre mim
+        </a>
+
+        <a href="#duvidas">
+          Dúvidas
+        </a>
+
+        <a href="#agendamento">
+          Agendamento
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div id="inicio" class="hero wrap">
+      <p class="eyebrow">
+        Terapia de casal e psicoterapia individual online
+      </p>
+
+      <h1>
+        Um espaço para cuidar de você e das suas relações.
+      </h1>
+
+      <p class="lead">
+        Quando as conversas viram discussões ou fica difícil
+        compreender o que você sente, a psicoterapia pode abrir
+        espaço para escuta, reflexão e escolhas mais conscientes.
+      </p>
+
+      <p>
+        Sou Gina Carvalho, psicóloga com atuação em relacionamentos.
+        Acompanho adultos e casais online, considerando a história,
+        o contexto e as necessidades de cada pessoa.
+      </p>
+
+      <div class="actions">
+        <a
+          class="button"
+          href="#agendamento"
+          data-wa="geral"
+        >
+          Consultar horários
+        </a>
+
+        <a
+          class="button secondary"
+          href="#casal"
+        >
+          Conhecer os atendimentos
+        </a>
+      </div>
+
+      <p class="identity">
+        <span data-nome>
+          [NOME PROFISSIONAL COMPLETO]
+        </span>
+
+        — Psicóloga | CRP
+
+        <span data-crp>
+          [XX/XXXXX]
+        </span>
+      </p>
+
+      <p class="quote">
+        “O que não é dito, vira ruído.”
+      </p>
+    </div>
+
+    <section class="tint">
+      <div class="wrap">
+        <p class="eyebrow">
+          Como posso acompanhar você
+        </p>
+
+        <h2>
+          Cuidado com emoções, escolhas e vínculos.
+        </h2>
+
+        <div class="grid">
+          <article class="card">
+            <span class="tag">
+              Para o casal
+            </span>
+
+            <h3>
+              Compreender a relação
+            </h3>
+
+            <p>
+              Um espaço para casais que enfrentam conflitos,
+              distanciamento, dificuldades de comunicação ou
+              momentos de mudança, respeitando os limites e
+              as escolhas de cada pessoa.
+            </p>
+
+            <a href="#casal">
+              Conhecer a terapia de casal →
+            </a>
+          </article>
+
+          <article class="card">
+            <span class="tag">
+              Para você
+            </span>
+
+            <h3>
+              Olhar para sua história
+            </h3>
+
+            <p>
+              Psicoterapia individual para adultos, com atenção
+              à autoestima, aos limites, aos padrões afetivos
+              e às diferentes formas de viver e se relacionar.
+            </p>
+
+            <a href="#individual">
+              Conhecer a psicoterapia individual →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="casal">
+      <div class="wrap reading">
+        <p class="eyebrow">
+          Terapia de casal online
+        </p>
+
+        <h2>
+          Vocês se amam, mas está difícil se entender?
+        </h2>
+
+        <p>
+          Quando as conversas terminam em discussão, os mesmos
+          conflitos se repetem ou a proximidade dá lugar ao
+          silêncio, pode ser difícil encontrar um caminho juntos.
+        </p>
+
+        <p>
+          A terapia de casal oferece um espaço de escuta para
+          compreender a dinâmica da relação, o que tem gerado
+          sofrimento e quais mudanças fazem sentido para vocês.
+        </p>
+
+        <h3>
+          Quando buscar esse espaço?
+        </h3>
+
+        <ul>
+          <li>
+            Discussões frequentes e dificuldade de se sentir ouvido.
+          </li>
+
+          <li>
+            Distanciamento afetivo e pouca conexão no cotidiano.
+          </li>
+
+          <li>
+            Dificuldade de negociar responsabilidades,
+            limites e expectativas.
+          </li>
+
+          <li>
+            Ciúmes, inseguranças e conflitos relacionados à confiança.
+          </li>
+
+          <li>
+            Sofrimento após uma infidelidade.
+          </li>
+
+          <li>
+            Mudanças na parentalidade, na rotina ou na vida do casal.
+          </li>
+
+          <li>
+            Dúvidas sobre continuar a relação ou conduzir uma separação.
+          </li>
+        </ul>
+
+        <h3>
+          Como é o trabalho?
+        </h3>
+
+        <p>
+          O objetivo não é escolher quem está certo. É compreender
+          o que mantém os conflitos e favorecer a expressão de
+          necessidades, a escuta e a construção de acordos.
+          Os objetivos são definidos em conjunto, sem promessa
+          de um resultado específico.
+        </p>
+
+        <p>
+          A terapia não impõe a permanência do casal nem a separação.
+          As decisões pertencem às pessoas envolvidas.
+        </p>
+
+        <h3>
+          Sessões por videochamada
+        </h3>
+
+        <p>
+          As sessões acontecem em horário combinado, com conexão
+          estável e privacidade. A participação no mesmo local ou
+          em locais diferentes será combinada conforme a situação
+          do casal. Os acordos de confidencialidade, incluindo
+          eventuais comunicações individuais, são conversados
+          no início.
+        </p>
+
+        <div class="notice">
+          <strong>
+            Segurança no atendimento
+          </strong>
+
+          <p>
+            Situações de medo, coerção, ameaça ou violência exigem
+            avaliação específica. O atendimento conjunto pode não
+            ser indicado; a prioridade será a segurança e o
+            encaminhamento adequado.
+          </p>
+        </div>
+
+        <a
+          class="button"
+          href="#agendamento"
+          data-wa="casal"
+        >
+          Consultar horários para terapia de casal
+        </a>
+      </div>
+    </section>
+
+    <section id="individual" class="tint">
+      <div class="wrap reading">
+        <p class="eyebrow">
+          Psicoterapia individual online para adultos
+        </p>
+
+        <h2>
+          Há espaço para sua história, seus sentimentos
+          e suas escolhas.
+        </h2>
+
+        <p>
+          Talvez esteja difícil colocar limites, lidar com um
+          término ou compreender padrões que se repetem nas suas
+          relações. Talvez você esteja vivendo ansiedade,
+          sobrecarga ou dúvidas sobre o que deseja para sua vida.
+        </p>
+
+        <p>
+          A psicoterapia é um espaço para compreender essas
+          experiências e cuidar da sua saúde emocional,
+          respeitando seu tempo e suas necessidades.
+        </p>
+
+        <h3>
+          O que podemos trabalhar?
+        </h3>
+
+        <ul>
+          <li>
+            Autoestima e relação consigo.
+          </li>
+
+          <li>
+            Expressão de necessidades e estabelecimento de limites.
+          </li>
+
+          <li>
+            Inseguranças, conflitos e padrões afetivos.
+          </li>
+
+          <li>
+            Términos, separações e mudanças de vida.
+          </li>
+
+          <li>
+            Ansiedade e sobrecarga emocional.
+          </li>
+
+          <li>
+            Escolhas e decisões pessoais.
+          </li>
+        </ul>
+
+        <h3>
+          Neurodesenvolvimento e personalidade na vida adulta
+        </h3>
+
+        <p>
+          Também acompanho adultos com transtornos do
+          neurodesenvolvimento e transtornos da personalidade,
+          considerando os impactos emocionais, cotidianos
+          e relacionais associados a essas condições.
+        </p>
+
+        <p>
+          O cuidado pode envolver regulação emocional, autoestima,
+          organização da rotina, identidade, limites e vínculos.
+          Quando necessário, pode haver orientação para avaliação
+          ou acompanhamento complementar com outros profissionais.
+        </p>
+
+        <p>
+          <strong>
+            Um diagnóstico não resume quem você é.
+          </strong>
+
+          O cuidado considera sua história, seu contexto,
+          suas potencialidades e suas necessidades.
+        </p>
+
+        <h3>
+          Como é o processo?
+        </h3>
+
+        <p>
+          Começamos pela compreensão da sua história e das questões
+          que motivaram a busca. Ao longo das sessões, podemos
+          observar relações entre pensamentos, emoções e
+          comportamentos e construir recursos para os desafios
+          do cotidiano. Os objetivos, a frequência e a duração
+          do acompanhamento são conversados durante o processo.
+        </p>
+
+        <p>
+          Você pode buscar psicoterapia mesmo que seu parceiro
+          não queira participar. O foco será seu processo pessoal,
+          e não mudar alguém que não participa das sessões.
+        </p>
+
+        <a
+          class="button"
+          href="#agendamento"
+          data-wa="individual"
+        >
+          Consultar horários para terapia individual
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="wrap reading">
+        <p class="eyebrow">
+          Sobre mim
+        </p>
+
+        <h2>
+          Gina Carvalho
+        </h2>
+
+        <p class="lead">
+          Psicóloga clínica, nordestina e baiana.
+        </p>
+
+        <!--
+          Confirme formação e tempo de experiência
+          antes de publicar.
+        -->
+
+        <p>
+          Há mais de 10 anos, acompanho casais em suas diferentes
+          histórias e desafios. Tenho formação em Terapia
+          Cognitivo-Comportamental e minha atuação é voltada
+          à compreensão dos relacionamentos e ao cuidado
+          com a saúde emocional.
+        </p>
+
+        <p>
+          Atendo adultos em psicoterapia individual e casais na
+          modalidade online. Também acompanho pessoas adultas
+          com transtornos do neurodesenvolvimento e transtornos
+          da personalidade, com atenção às suas experiências,
+          potencialidades, dificuldades e relações.
+        </p>
+
+        <p>
+          Acredito em uma escuta que acolhe sem perder a profundidade.
+          Minha prática considera o conhecimento da Psicologia,
+          a experiência clínica e as necessidades de cada pessoa
+          ou casal. Os objetivos são construídos em conjunto e
+          revistos ao longo do processo.
+        </p>
+
+        <p>
+          Não existe uma única resposta para todas as relações.
+          Por isso, respeito a história, o contexto e a autonomia
+          de quem busca atendimento.
+        </p>
+
+        <p class="identity">
+          <span data-nome>
+            [NOME PROFISSIONAL COMPLETO]
+          </span>
+
+          — Psicóloga | CRP
+
+          <span data-crp>
+            [XX/XXXXX]
+          </span>
+        </p>
+
+        <!--
+          Para usar uma foto real, adicione o arquivo
+          ao repositório e insira o elemento abaixo,
+          retirando-o deste comentário:
+
+          <img
+            src="gina-carvalho-psicologa.jpg"
+            alt="Gina Carvalho, psicóloga"
+            width="600"
+            height="750"
+            loading="lazy"
+            style="
+              max-width: 100%;
+              height: auto;
+              border-radius: 22px;
+            "
+          >
+
+          Ajuste width e height às dimensões reais da fotografia.
+        -->
+      </div>
+    </section>
+
+    <section id="duvidas" class="tint">
+      <div class="wrap reading">
+        <p class="eyebrow">
+          Antes de começar
+        </p>
+
+        <h2>
+          Dúvidas sobre terapia online
+        </h2>
+
+        <details>
+          <summary>
+            Como funciona o atendimento online?
+          </summary>
+
+          <p>
+            As sessões acontecem por videochamada, em horário
+            agendado. Antes da primeira sessão, você recebe
+            as orientações de acesso e as informações sobre
+            o funcionamento do acompanhamento.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Preciso morar na mesma cidade?
+          </summary>
+
+          <p>
+            Não. A possibilidade de acompanhamento a distância
+            será avaliada considerando sua localização,
+            suas necessidades e as condições aplicáveis
+            ao atendimento.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            O que preciso para participar?
+          </summary>
+
+          <p>
+            Um dispositivo com câmera e microfone, conexão estável
+            e um ambiente reservado. Fones podem ajudar.
+            Evite participar dirigindo ou em locais onde
+            outras pessoas possam ouvir a conversa.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Os dois precisam participar da terapia de casal?
+          </summary>
+
+          <p>
+            O atendimento de casal pressupõe o envolvimento
+            de ambos. A organização das sessões é combinada
+            conforme a avaliação do caso. Se apenas uma pessoa
+            deseja apoio, pode consultar a possibilidade
+            de psicoterapia individual.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            A terapia de casal serve para quem pensa em se separar?
+          </summary>
+
+          <p>
+            Sim. Pode ajudar a compreender a relação e as decisões
+            que estão sendo consideradas, sem impor a permanência
+            do casal nem a separação.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Posso falar do meu relacionamento na terapia individual?
+          </summary>
+
+          <p>
+            Sim. Essas questões podem ser trabalhadas a partir
+            da sua experiência, das suas necessidades
+            e das suas escolhas.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Você atende adultos com transtornos do
+            neurodesenvolvimento ou da personalidade?
+          </summary>
+
+          <p>
+            Sim. A psicoterapia pode abordar os impactos
+            emocionais, cotidianos e relacionais associados
+            a essas condições, a partir das necessidades
+            de cada pessoa. Quando necessário, pode haver
+            encaminhamento para avaliação ou cuidado complementar.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Quanto tempo dura o acompanhamento?
+          </summary>
+
+          <p>
+            Não há um prazo único. A duração e a frequência são
+            conversadas conforme a demanda e os objetivos.
+            No contato inicial, você pode solicitar informações
+            sobre a duração de cada sessão.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Qual é o valor das sessões?
+          </summary>
+
+          <p>
+            Os honorários e as condições de pagamento são
+            informados no contato profissional, antes
+            da confirmação do agendamento.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            O atendimento é sigiloso?
+          </summary>
+
+          <p>
+            O trabalho segue o dever de sigilo profissional
+            e seus limites previstos nas normas da Psicologia.
+            Na terapia de casal, os acordos de confidencialidade
+            são conversados no início. A privacidade do ambiente
+            de participação também precisa ser cuidada.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section id="agendamento">
+      <div class="wrap grid">
+        <div>
+          <p class="eyebrow">
+            Agendamento
+          </p>
+
+          <h2>
+            O primeiro contato pode ser simples.
+          </h2>
+
+          <p>
+            Informe seu primeiro nome, o tipo de atendimento
+            que procura e os períodos em que tem disponibilidade.
+            Você não precisa contar detalhes íntimos pelo WhatsApp.
+          </p>
+
+          <ol class="steps">
+            <li>
+              Entre em contato pelo canal profissional.
+            </li>
+
+            <li>
+              Receba informações sobre horários,
+              honorários e funcionamento.
+            </li>
+
+            <li>
+              Após a confirmação, receba as orientações
+              para a sessão online.
+            </li>
+          </ol>
+
+          <p class="small">
+            O envio de uma mensagem não reserva automaticamente
+            um horário. O contato inicial não é uma sessão
+            de psicoterapia.
+          </p>
+        </div>
+
+        <div class="card contact">
+          <h3>
+            Vamos conversar?
+          </h3>
+
+          <div class="actions">
+            <a
+              class="button"
+              href="#contatos"
+              data-wa="geral"
+            >
+              Consultar horários pelo WhatsApp
+            </a>
+          </div>
+
+          <div id="contatos">
+            <p>
+              <strong>
+                WhatsApp:
+              </strong>
+
+              <span data-telefone>
+                [WHATSAPP PROFISSIONAL]
+              </span>
+            </p>
+
+            <p>
+              <strong>
+                E-mail:
+              </strong>
+
+              <span data-email>
+                [E-MAIL PROFISSIONAL]
+              </span>
+            </p>
+
+            <p>
+              <strong>
+                Horário de resposta:
+              </strong>
+
+              <span data-horario>
+                [DIAS E HORÁRIOS]
+              </span>
+            </p>
+
+            <p>
+              <a
+                href="https://www.instagram.com/ginacarvalhopsi/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram @ginacarvalhopsi ↗
+              </a>
+            </p>
+          </div>
+
+          <p class="small">
+            Canal destinado a informações e agendamento.
+            As mensagens são respondidas no horário informado
+            e não substituem atendimento de urgência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacidade" class="tint">
+      <div class="wrap reading">
+        <p class="eyebrow">
+          Transparência
+        </p>
+
+        <h2>
+          Privacidade e contato
+        </h2>
+
+        <p>
+          Este site é informativo e não possui formulário,
+          ferramentas próprias de análise de navegação,
+          publicidade ou cookies próprios. A hospedagem pelo
+          GitHub Pages pode envolver registros técnicos de acesso
+          conforme as políticas do provedor.
+        </p>
+
+        <p>
+          Ao entrar em contato pelo WhatsApp ou e-mail,
+          forneça apenas os dados necessários para receber
+          informações e organizar o agendamento.
+          Evite enviar relatos clínicos, documentos ou
+          informações íntimas no primeiro contato.
+        </p>
+
+        <p>
+          Os dados recebidos são utilizados para responder
+          à sua solicitação e organizar o atendimento.
+          Informações relacionadas ao acompanhamento
+          psicológico são tratadas conforme as obrigações
+          de sigilo e registro profissional.
+        </p>
+
+        <p>
+          WhatsApp, Instagram e o provedor de e-mail são
+          serviços de terceiros, com suas próprias políticas
+          de privacidade. Para dúvidas ou solicitações sobre
+          dados pessoais, utilize o e-mail profissional
+          informado acima.
+        </p>
+
+        <p>
+          Responsável:
+
+          <span data-nome>
+            [NOME PROFISSIONAL COMPLETO]
+          </span>,
+
+          psicóloga, CRP
+
+          <span data-crp>
+            [XX/XXXXX]
+          </span>.
+        </p>
+
+        <!--
+          Revise este aviso de acordo com suas práticas
+          reais de tratamento, armazenamento e retenção de dados.
+
+          Atualize-o caso adicione formulários ou Analytics.
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="brand">
+        Gina Carvalho
+      </p>
+
+      <p class="identity">
+        <span data-nome>
+          [NOME PROFISSIONAL COMPLETO]
+        </span>
+
+        — Psicóloga | CRP
+
+        <span data-crp>
+          [XX/XXXXX]
+        </span>
+
+        <br>
+
+        Terapia de casal e psicoterapia individual online
+        para adultos.
+      </p>
+
+      <p>
+        <a href="#agendamento">
+          Agendamento
+        </a>
+
+        ·
+
+        <a href="#privacidade">
+          Privacidade
+        </a>
+
+        ·
+
+        <a href="#inicio">
+          Voltar ao início
+        </a>
+      </p>
+
+      <p class="small">
+        ©
+
+        <span id="ano">
+          2026
+        </span>
+
+        Gina Carvalho.
+      </p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p>
+      Para agendar, utilize os contatos profissionais informados
+      na seção Agendamento. Os textos e o menu funcionam
+      sem JavaScript.
+    </p>
+  </noscript>
+
+  <script>
+    /*
+      PREENCHA ANTES DE PUBLICAR.
+
+      Não use números ou registros fictícios.
+
+      WhatsApp:
+      código do país + DDD + número, apenas dígitos.
+
+      Formato brasileiro:
+      55 seguido de DDD e número real.
+
+      Não coloque informações clínicas, senhas
+      ou credenciais neste código público.
+    */
+
+    const CONFIG = {
+      nome: "Gina Lorena de Carvalho Barboza Moreira",
+      crp: "0310729",
+      whatsapp: "74991352392",
+      email: "ginnalorenna@hotmail.com",
+      horario: "8:00-11:00/15:00-18:00"
+    };
+
+    /*
+      nome:
+      Nome completo associado ao registro profissional.
+
+      crp:
+      Regional/número, sem repetir a palavra CRP.
+
+      whatsapp:
+      Número completo com 55, sem símbolos.
+
+      email:
+      E-mail profissional.
+
+      horario:
+      Dias e horários de resposta.
+    */
+
+    const campos = {
+      nome: CONFIG.nome,
+      crp: CONFIG.crp,
+      telefone: CONFIG.whatsapp,
+      email: CONFIG.email,
+      horario: CONFIG.horario
+    };
+
+    for (const [campo, valor] of Object.entries(campos)) {
+      if (valor.trim()) {
+        document
+          .querySelectorAll("[data-" + campo + "]")
+          .forEach((elemento) => {
+            elemento.textContent = valor;
+          });
+      }
+    }
+
+    const mensagens = {
+      geral:
+        "Olá, Gina! Encontrei seu site e gostaria de informações " +
+        "sobre atendimento online e horários disponíveis.",
+
+      casal:
+        "Olá, Gina! Encontrei seu site e gostaria de informações " +
+        "sobre terapia de casal online e horários disponíveis.",
+
+      individual:
+        "Olá, Gina! Encontrei seu site e gostaria de informações " +
+        "sobre psicoterapia individual online e horários disponíveis."
+    };
+
+    const whatsappValido = /^55\d{10,11}$/.test(
+      CONFIG.whatsapp
+    );
+
+    document
+      .querySelectorAll("[data-wa]")
+      .forEach((link) => {
+        if (whatsappValido) {
+          const tipoAtendimento = link.dataset.wa;
+
+          const mensagem = mensagens[tipoAtendimento];
+
+          link.href =
+            "https://wa.me/" +
+            CONFIG.whatsapp +
+            "?text=" +
+            encodeURIComponent(mensagem);
+
+          link.target = "_blank";
+
+          link.rel = "noopener noreferrer";
+        }
+
+        /*
+          Sem número preenchido, o link permanece direcionado
+          para uma seção da própria página.
+        */
+      });
+
+    document.getElementById("ano").textContent =
+      new Date().getFullYear();
+
+    const completo =
+      Object.values(CONFIG).every((valor) => valor.trim()) &&
+      whatsappValido;
+
+    document.getElementById("setup").hidden = completo;
+  </script>
+</body>
+</html>
